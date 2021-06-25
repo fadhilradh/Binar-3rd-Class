@@ -1,0 +1,7 @@
+#quotes {
+  background-image: url("../assets/bg-5.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+}

@@ -1,0 +1,31 @@
+#about {
+  background-image: url("../assets/the-games-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 130px 280px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#about > #text {
+  grid-column-start: 1;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#about > #text > h3 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+#about > #text > h2 {
+  font-size: 1.5rem;
+  font-size: 56px;
+  letter-spacing: 3px;
+}
+
+#about > #carousel {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
