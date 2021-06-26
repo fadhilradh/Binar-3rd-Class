@@ -19,10 +19,10 @@
 
 <body>
   <section id="main">
-    <div id="navbar">
+    <div id="navbar" class="px-5 md:px-10">
       <div id="logo">LOGO</div>
 
-      <div id="menu">
+      <div id="menu" class="hidden md:flex">
         <div class="menu-item">
           <a href="">HOME</a>
         </div>
@@ -50,8 +50,8 @@
     <div id="main-content">
       <div id="banner">
         <div id="wrapper">
-          <h1 id="title">Play traditional game</h1>
-          <p id="subtitle">Experience new traditional game play</p>
+          <h1 id="title" class="text-3xl md:text-7xl">Play traditional game</h1>
+          <p id="subtitle" class="w-5/6 md:w-full">Experience new traditional game play</p>
           <a>PLAY NOW</a>
         </div>
       </div>
@@ -67,14 +67,14 @@
 
   </section>
 
-  <section id="about">
-    <div id="text">
-      <h3>What's so special?</h3>
-      <h2>THE GAMES</h2>
+  <section id="about" class="md:flex w-full p-16 md:px-64 md:py-32">
+    <div id="text" class="md:w-1/3 tracking-wider">
+      <h3 class="text-xl">What's so special?</h3>
+      <h2 class="text-3xl md:text-5xl">THE GAMES</h2>
     </div>
 
-    <div id="carousel">
-      <img class="mt-24" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
+    <div id="carousel" class="w-full md:w-2/3">
+      <img class="mt-24" class="w-full h-full" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
     </div>
   </section>
 
@@ -117,33 +117,33 @@
       <h1 class="text-6xl w-40 text-white tracking-wider">SYSTEM REQUIREMENTS</h1>
     </div>
 
-    <div class="border border-gray-300 w-1/2 flex flex-col tracking-wider">
+    <div class="w-1/2 flex flex-col tracking-wider">
       <div class="flex w-full">
-        <div class="border border-gray-300 w-1/2 p-4">
+        <div class="border border-gray-100 w-1/2 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">OS :</h3>
           <p>Windows 7 64-bit only
             (No OSX support at this time)
           </p>
         </div>
-        <div class="border border-gray-300 w-1/2 p-4">
+        <div class="border border-gray-100 w-1/2 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">PROCESSOR:</h3>
           <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
           </p>
         </div>
       </div>
-      <div class="flex border border-gray-300 w-full">
-        <div class="w-1/2 border border-gray-300 p-4">
+      <div class="flex border border-gray-100 w-full">
+        <div class="w-1/2 border border-gray-100 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">MEMORY :</h3>
           <p>4GB RAM
           </p>
         </div>
-        <div class="w-1/2 border border-gray-300 p-4">
+        <div class="w-1/2 border border-gray-100 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">STORAGE :</h3>
           <p>8 GB available space
           </p>
         </div>
       </div>
-      <div class="flex p-4 flex-col">
+      <div class="flex p-4 flex-col border border-gray-100">
         <h3 class="text-2xl text-yellow-500 mb-1">GRAPHICS :</h3>
         <p>NVIDIA GeForce GTX 660 2GB or
         </p>
@@ -153,13 +153,13 @@
     </div>
   </section>
 
-  <!-- <section id="quotes">
+  <section id="quotes">
 
   </section>
 
   <section id="subscribe">
 
-  </section> -->
+  </section>
 </body>
 
 </html>
