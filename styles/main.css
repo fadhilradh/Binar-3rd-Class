@@ -28,6 +28,10 @@ body {
   opacity: 0.6;
   box-sizing: border-box;
   height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #logo {
