@@ -113,37 +113,38 @@
   </section>
 
   <section id="sysreq" class="p-32 flex flex-col space-y-20 text-white shadow-sm">
-    <div>
+    <div class="flex">
       <h1 class="text-6xl w-40 text-white tracking-wider">SYSTEM REQUIREMENTS</h1>
+      <!-- <p class="ml-5">Can my computer run this game?</p> -->
     </div>
 
-    <div class="w-1/2 flex flex-col tracking-wider">
+    <div class="w-1/2 flex flex-col tracking-wider border border-gray-700">
       <div class="flex w-full">
-        <div class="border border-gray-100 w-1/2 p-4">
+        <div class="border-b border-r border-gray-700 w-1/2 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">OS :</h3>
           <p>Windows 7 64-bit only
             (No OSX support at this time)
           </p>
         </div>
-        <div class="border border-gray-100 w-1/2 p-4">
+        <div class="border-b border-gray-700 w-1/2 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">PROCESSOR:</h3>
           <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
           </p>
         </div>
       </div>
-      <div class="flex border border-gray-100 w-full">
-        <div class="w-1/2 border border-gray-100 p-4">
+      <div class="flex  w-full">
+        <div class="w-1/2 border-b border-r border-gray-700 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">MEMORY :</h3>
           <p>4GB RAM
           </p>
         </div>
-        <div class="w-1/2 border border-gray-100 p-4">
+        <div class="w-1/2 border-b border-gray-700 p-4">
           <h3 class="text-2xl text-yellow-500 mb-1">STORAGE :</h3>
           <p>8 GB available space
           </p>
         </div>
       </div>
-      <div class="flex p-4 flex-col border border-gray-100">
+      <div class="flex p-4 flex-col ">
         <h3 class="text-2xl text-yellow-500 mb-1">GRAPHICS :</h3>
         <p>NVIDIA GeForce GTX 660 2GB or
         </p>
@@ -153,12 +154,62 @@
     </div>
   </section>
 
-  <section id="quotes">
+  <section id="quotes" class="md:flex md:p-32 tracking-wider">
+    <div class="text-white h-full flex flex-col justify-center w-1/2 space-y-10">
+      <h1 class="md:text-6xl">TOP SCORES</h1>
+      <p class="font-sans w-1/2">This top score from various games provided on this platform</p>
+      <button class="p-3 bg-yellow-500 w-1/3 rounded-sm text-black 
+      hover:bg-black hover:text-yellow-500 hover:border-yellow-500 border border-transparent" href="">see
+        more</button>
+    </div>
 
+    <div class="flex flex-col w-1/2 space-y-10 " id="tweets">
+      <div class="flex flex-col justify-between card h-1/4 w-3/5 bg-gray-900 rounded-xl ml-32 p-3">
+        <div class="flex">
+          <img src="/assets/photos/image 8.png" class="rounded-full w-12 mr-5" alt="">
+          <div>
+            <p class="tracking-wider text-yellow-500">Evan Lahti</p>
+            <p class="text-gray-400">PC Gamer</p>
+          </div>
+          <img src="/assets/twitter.svg" class="w-5 ml-auto" alt="">
+        </div>
+        <div class="text-gray-300">“One of my gaming highlights of the year.”</div>
+        <div class="text-sm text-gray-500">October 18, 2018</div>
+      </div>
+
+      <div class="flex flex-col justify-between card h-1/4 w-3/5 bg-gray-900 rounded-xl p-3">
+        <div class="flex">
+          <img src="/assets/photos/image-1.png" class="rounded-full w-12 mr-5" alt="">
+          <div>
+            <p class="tracking-wider text-yellow-500">Jada Griffin</p>
+            <p class="text-gray-400">Nerdreactor</p>
+          </div>
+          <img src="/assets/twitter.svg" class="w-5 ml-auto" alt="">
+        </div>
+        <div class="text-gray-300">“The next big thing in the world of streaming and survival games. ”</div>
+        <div class="text-sm text-gray-500">December 21, 2018</div>
+      </div>
+
+      <div class="flex flex-col justify-between card h-1/4 w-3/5 bg-gray-900 rounded-xl p-3 ml-20">
+        <div class="flex">
+          <img src="/assets/photos/image 8.png" class="rounded-full w-12 mr-5" alt="">
+          <div>
+            <p class="tracking-wider text-yellow-500">Aaron Williams </p>
+            <p class="text-gray-400">Uproxx</p>
+          </div>
+          <img src="/assets/twitter.svg" class="w-5 ml-auto" alt="">
+        </div>
+        <div class="text-gray-300">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</div>
+        <div class="text-sm text-gray-500">December 24, 2018</div>
+      </div>
+    </div>
   </section>
 
   <section id="subscribe">
-
+    <div>
+      <img src="/assets/image.png" alt="">
+    </div>
+    <div></div>
   </section>
 </body>
 
