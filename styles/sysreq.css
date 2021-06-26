@@ -2,7 +2,7 @@
   background-image: url("../assets/requirements.png");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: auto;
   display: grid;
   font-family: Arial, Helvetica, sans-serif;
 }
