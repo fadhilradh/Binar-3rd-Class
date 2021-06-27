@@ -1,17 +1,17 @@
 #subscribe {
-  background: black;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  font-family: "Open Sans", Helvetica, sans-serif;
+    background: black;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 #subscribe > div > div > div > #input {
-  background: #1c1b1b;
+    background: #1c1b1b;
 }
 
 #subscribe > div > img {
-  box-shadow: 2px 9px 256px 35px rgba(0, 0, 0, 0.75) inset;
-  -webkit-box-shadow: 2px 9px 256px 35px rgba(0, 0, 0, 0.75) inset;
-  -moz-box-shadow: 2px 9px 256px 35px rgba(0, 0, 0, 0.75) inset;
+    box-shadow: 2px 9px 256px 35px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 2px 9px 256px 35px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 2px 9px 256px 35px rgba(0, 0, 0, 0.75) inset;
 }
