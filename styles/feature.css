@@ -1,9 +1,9 @@
 #features {
-  background-image: url("../assets/features.jpg");
+  background-image: url("../assets/Group\ \(1\).svg");
   background-position: center;
   background-size: cover;
   height: 100vh;
-
+  width: 100%;
   color: white;
   font-family: Arial;
 }
