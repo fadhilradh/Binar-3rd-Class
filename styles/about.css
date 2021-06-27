@@ -10,10 +10,20 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#about > #text > h3 {
-  letter-spacing: 2px;
+#about > div.swiper-container > div.swiper-button-prev,
+div.swiper-button-next,
+div.swiper-pagination {
+  color: white;
 }
 
-#about > #text > h2 {
-  letter-spacing: 3px;
+#about > div.swiper-container > div.swiper-wrapper {
+  height: 30%;
+}
+
+#about > div.swiper-container > div.swiper-button-prev {
+  margin-left: -50px;
+}
+
+#about > div.swiper-container > div.swiper-button-next {
+  margin-right: -50px;
 }
