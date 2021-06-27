@@ -3,8 +3,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 55% 45%;
+
   color: white;
   font-family: Arial;
 }

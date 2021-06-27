@@ -45,7 +45,7 @@
       </div>
 
 
-      <div id="auth">
+      <div class="w-auto space-x-5">
         <span>Sign Up</span>
         <span>Login</span>
       </div>
@@ -71,22 +71,22 @@
 
   </section>
 
-  <section id="about" class="flex sm:flex-col lg:flex-row p-16 lg:px-64 md:py-32">
-    <div id="text" class="lg:w-1/3 tracking-wider sm:text-center lg:text-left">
-      <h3 class="text-xl ">What's so special?</h3>
-      <h2 class="text-3xl md:text-5xl">THE GAMES</h2>
+  <section id="about" class="flex flex-col  lg:flex-row  justify-center lg:justify-start p-16 lg:px-24 md:py-32">
+    <div id="text" class="w-full lg:w-1/3 whitespace-nowrap tracking-wider mb-14 lg:mb-0">
+      <h3 class="text-xl text-center lg:text-left">What's so special?</h3>
+      <h2 class="text-3xl md:text-5xl text-center lg:text-left">THE GAMES</h2>
     </div>
 
-    <div class="mySwiper swiper-container h-4/5 w-full md:w-2/3 px-24">
-      <div class="swiper-wrapper mt-24 lg:mt-10">
+    <div class="mySwiper swiper-container h-auto w-full lg:w-3/5 px-24">
+      <div class="swiper-wrapper lg:mt-52">
         <div class="swiper-slide ">
-          <img class="mt-24" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
+          <img class="" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
         </div>
         <div class="swiper-slide">
-          <img class="mt-24" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
+          <img class="" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
         </div>
         <div class="swiper-slide">
-          <img class="mt-24" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
+          <img class="" src="/assets/rockpaperstrategy-1600.jpg" alt="scissor">
         </div>
 
       </div>
@@ -95,13 +95,14 @@
     </div>
   </section>
 
-  <section id="features">
-    <div class="flex-grow"></div>
-    <div class="flex flex-col justify-center">
+  <section class="flex" id="features">
+    <div class="lg:w-3/5 md:w-1/2"></div>
+    <div class="flex flex-col items-center md:items-start justify-center bg-black lg:bg-transparent 
+      opacity-80 md:pl-16 lg:pl-none">
       <h1 class="text-2xl">What's so special ?</h1>
       <h1 class="text-6xl mb-10">FEATURES</h1>
 
-      <div class="flex flex-col ">
+      <div class="flex flex-col pl-10 md:pl-0">
         <div class="flex items-baseline ">
           <div class="flex flex-col h-full">
             <div class="w-4 h-4 bg-white rounded-full"></div>
@@ -135,16 +136,14 @@
     </div>
   </section>
 
-  <section id="sysreq" class="lg:p-32 md:p-10 p-5 flex flex-col 
-  justify-center space-y-20 text-white shadow-sm">
-    <div class="flex justify-center md:justify-left mt-14 md:mt-0">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl w-40 
+  <section id="sysreq" class="flex flex-col justify-center lg:p-32 md:p-10
+   px-5 py-10 space-y-20 text-white shadow-sm">
+    <h1 class="w-full lg:w-40 text-2xl sm:text-3xl md:text-4xl lg:text-6xl whitespace-nowrap lg:whitespace-normal 
       text-white tracking-wider text-center md:text-left">
-        SYSTEM REQUIREMENTS</h1>
-    </div>
+      SYSTEM REQUIREMENTS</h1>
 
-    <div class="md:w-3/4 bg-gray-800 opacity-80 lg:opacity-100 lg:bg-transparent 
-      lg:w-1/2 flex flex-col tracking-wider border border-gray-700">
+    <div class="md:w-3/4 bg-black lg:bg-transparent opacity-80
+       flex flex-col tracking-wider border border-gray-700">
       <div class="flex w-full">
         <div class="border-b border-r border-gray-700 w-1/2 p-4">
           <h3 class="text-lg lg:text-2xl text-yellow-500 mb-1">OS :</h3>
@@ -191,8 +190,10 @@
         more</button>
     </div>
 
-    <div class="flex flex-col items-center md:items-end lg:items-baseline w-full lg:w-1/2 space-y-10" id="tweets">
-      <div class="flex flex-col justify-between card h-1/4 w-4/5 bg-gray-900 rounded-xl lg:ml-24 p-3
+    <div class="flex flex-col justify-center items-center md:items-end lg:items-baseline w-full lg:w-1/2 space-y-10"
+      id="tweets">
+
+      <div class="flex flex-col justify-between card h-auto w-4/5 bg-gray-900 rounded-xl lg:ml-24 p-3
       transition duration-200 transform ease-in hover:scale-105 hover:animate-pulse">
         <div class="flex">
           <img src="/assets/photos/image 8.png" class=" bg-cover bg-center rounded-full w-12 mr-5" alt="">
@@ -206,7 +207,7 @@
         <div class="text-sm text-gray-500">October 18, 2018</div>
       </div>
 
-      <div class="flex flex-col justify-between card h-1/4 w-4/5 bg-gray-900 rounded-xl p-3 
+      <div class="flex flex-col justify-between card h-auto w-4/5 bg-gray-900 rounded-xl p-3 
         transition duration-200 transform ease-in hover:scale-105 hover:animate-pulse">
         <div class="flex">
           <img src="/assets/photos/image-1.png" class="bg-cover bg-center rounded-full w-12 mr-5" alt="">
@@ -220,7 +221,7 @@
         <div class="text-sm text-gray-500">December 21, 2018</div>
       </div>
 
-      <div class="flex flex-col justify-between card h-1/4 w-4/5 bg-gray-900 rounded-xl p-3 lg:ml-20 
+      <div class="flex flex-col justify-between card h-auto w-4/5 bg-gray-900 rounded-xl p-3 lg:ml-20 
       transition duration-200 transform ease-in hover:scale-105 hover:animate-pulse">
         <div class="flex">
           <img src="/assets/photos/image.png" class="bg-cover bg-center rounded-full w-12 mr-5" alt="">

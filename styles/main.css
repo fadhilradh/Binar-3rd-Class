@@ -1,6 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #main {
@@ -26,7 +28,6 @@ body {
   font-weight: bold;
   background: black;
   opacity: 0.6;
-  box-sizing: border-box;
   height: 90px;
   position: fixed;
   top: 0;
@@ -57,21 +58,6 @@ body {
 
 .menu-item a:hover {
   color: #ffb548;
-}
-
-#auth {
-  width: 11rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-#auth span {
-  text-transform: uppercase;
-}
-
-#auth span:hover {
-  color: #ffb548;
-  cursor: pointer;
 }
 
 #main-content {
