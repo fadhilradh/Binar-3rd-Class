@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    background: #9c835f;
+    font-family: arial;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 37px;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 72px;
+    height: 72px;
+}
+
+nav a {
+    font-size: 72px;
+    text-decoration: none;
+    color: #724c21;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f9b23d;
+}
+
+.container {
+    width: 70%;
+    height: 70vh;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-player {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area-player h4 {
+    letter-spacing: 0.1em;
+    font-size: 36px;
+    margin-bottom: 50px
+
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    width: 30%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.info h3 {
+    font-size: 90px;
+    color: #bd0000;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    grid-row-start: 1;
+    text-align: center;
+}
+
+.info img {
+    width: 72px;
+    height: 72px;
+    grid-row-start: 5;
+}
+
+.info .result {
+    width: 100%;
+    height: 137px;
+    background: #4c9654;
+    letter-spacing: 0.1em;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 3;
+    margin: 0 auto;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    font-size: 38px;
+    text-align: center;
+}
+
+.info .result:hover {
+    background: #035b0c;
+}
+
+.area-komputer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area-komputer h4 {
+    letter-spacing: 0.1em;
+    font-size: 36px;
+}
+
+ul {
+    padding-top: 80px;
+    padding-left: 25px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.img-komputer {
+    width: 250px;
+    height: 250px;
+}
+
+.batu,
+.gunting,
+.kertas {
+    transition: 0.3s;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.batu:hover,
+.kertas:hover,
+.gunting:hover,
+.active {
+    background-color: #c4c4c4;
+}
+
+.batu:active,
+.kertas:active,
+.gunting:active {
+    top: 2px;
+    background-color: #c4c4c4;
+}
+
+.rotate {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all 0.1s linear;
+}
+
+.refresh-img {
+    transition-duration: 2s;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        width: 90%;
+        padding: 15px;
+    }
+
+    nav h1 {
+        font-size: 24px
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .area-player {
+        flex-direction:column;
+        width: 100%;
+    }
+
+    .area-player h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight:bold;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .img-container {
+        flex-direction: row;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+    }
+
+    .info h3 {
+        display: none
+    }
+
+    .info .result {
+        width: 30%;
+        height: 70px;
+        font-size: 24px
+    }
+
+    .area-komputer {
+        width: 100%;
+    }
+
+    .area-komputer h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight:bold;
+    }
+
+    .img-komputer {
+        width: 150px;
+        height: 150px;
+    }
+}

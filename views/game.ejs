@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">
+            < </a> <img src="assets/game/logo.png" alt="logo">
+                <h1>Rock Paper Scissors</h1>
+
+    </nav>
+
+    <div class="container">
+        <div class="area-player">
+            <h4>PLAYER 1</h4>
+            <div class="img-container">
+                <img src="assets/game/batu.png" class="batu">
+                <img src="assets/game/gunting.png" class="gunting">
+                <img src="assets/game/kertas.png" class="kertas">
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>VS</h3>
+
+            <div class="result information">
+                <p>GAME RESULT</p>
+            </div>
+        </div>
+
+        <div class="area-komputer">
+            <h4>COM</h4>
+            <img class="img-komputer" src="assets/game/batu.png">
+            <!-- <img src="assets/gunting.png" class="img-komputer">
+            <img src="assets/kertas.png" cclass="img-komputer"> -->
+        </div>
+    </div>
+
+    <script>
+        const rock = document.querySelector(".batu");
+        const scissor = document.querySelector(".gunting");
+        const paper = document.querySelector(".kertas");
+        const information = document.querySelector(".information");
+        const computerPicture = document.querySelector(".img-komputer");
+        const playerPictures = document.querySelectorAll(".area-player img");
+
+        const findComputerChoice = () => {
+            const computerChoice = Math.random();
+            if (computerChoice < 0.34) return `batu`;
+            if (computerChoice >= 0.34 && computerChoice <= 0.67) return `gunting`;
+            return `kertas`;
+        };
+
+        const getGameResult = (playerChoice, computerChoice) => {
+            if (playerChoice == computerChoice) return "DRAW !";
+            if (playerChoice == "batu")
+                return computerChoice == "gunting" ? "PLAYER 1 WIN !" : "COM WIN !";
+            if (playerChoice == "gunting")
+                return computerChoice == "batu" ? "COM WIN !" : "PLAYER 1 WIN !";
+            if (playerChoice == "kertas")
+                return computerChoice == "gunting" ? "COM WIN !" : "PLAYER 1 WIN !";
+        };
+
+        const shufflePictures = () => {
+            const pictures = ["batu", "gunting", "kertas"];
+            const startTime = new Date().getTime();
+            const refreshImg = document.getElementsByClassName("refresh-img");
+            let i = 0;
+            setInterval(() => {
+                if (new Date().getTime() - startTime > 1500) {
+                    clearInterval;
+                    return;
+                }
+                computerPicture.setAttribute(
+                    "src",
+                    "assets/game/" + pictures[i++] + ".png"
+                );
+                if (i == pictures.length) i = 0;
+            }, 100);
+        };
+
+        const runTheGame = () => {
+            playerPictures.forEach((clickedPicture) => {
+                clickedPicture.addEventListener("click", function () {
+                    const playerChoice = clickedPicture.className;
+                    const computerChoice = findComputerChoice();
+                    const result = getGameResult(playerChoice, computerChoice);
+
+                    shufflePictures();
+
+                    setTimeout(() => {
+                        information.innerText = result;
+                        computerPicture.setAttribute(
+                            "src",
+                            `assets/game/${computerChoice}.png`
+                        );
+                    }, 1500);
+                    information.innerText = "";
+                });
+            });
+        };
+
+        runTheGame();
+    </script>
+</body>
+
+</html>
